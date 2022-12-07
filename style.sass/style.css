@@ -1,36 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 html {
   font-size: 62.5%;
 }
 
+.mouse-circle, .mouse-dot {
+  position: fixed;
+  z-index: 100;
+}
+
+.mouse-circle {
+  width: 5rem;
+  height: 5rem;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+}
+
+.mouse-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+}
+
 .page-bg {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: rgba(28,34,66,1);
-  background: linear-gradient(84deg, rgba(28,34,66,0.8) 0%, rgba(201,238,230,0.6) 100%), url(/images/bg.jpg);
-  background-size: cover;
+  background: rgb(28, 34, 66);
+  background: linear-gradient(84deg, rgba(28, 34, 66, 0.8603816527) 0%, rgba(201, 238, 230, 0.6) 100%), url(/images/bg.jpg);
   background-repeat: no-repeat;
- 
-}
-
-.mouse-circle, .mouse-dot{
-  border-radius: 50%;
-  position: fixed;
-  z-index: 100;
-}
-.mouse-circle {
-  width: 6rem;
-  height: 6rem;
-  border: .1rem solid white;;
-
-}
-.mouse-dot {
-  width: 0.5rem;
-  height:0.5rem;
-  background-color: rgb(48, 0, 94);
-}
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
