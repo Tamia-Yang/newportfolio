@@ -10,19 +10,21 @@ html {
 .mouse-circle, .mouse-dot {
   position: fixed;
   z-index: 100;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mouse-circle {
-  width: 5rem;
-  height: 5rem;
-  border: 0.1rem solid white;
+  border: 0.6rem solid rgba(255, 29, 142, 0.678);
   border-radius: 50%;
+  -webkit-animation: mouseCircleAnime 5s infinite;
+          animation: mouseCircleAnime 5s infinite;
 }
 
 .mouse-dot {
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.678);
 }
 
 .page-bg {
@@ -33,4 +35,34 @@ html {
   background: linear-gradient(84deg, rgba(28, 34, 66, 0.8603816527) 0%, rgba(201, 238, 230, 0.6) 100%), url(/images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@-webkit-keyframes mouseCircleAnime {
+  0% {
+    width: 3rem;
+    height: 3rem;
+  }
+  50% {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  100% {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@keyframes mouseCircleAnime {
+  0% {
+    width: 3rem;
+    height: 3rem;
+  }
+  50% {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  100% {
+    width: 3rem;
+    height: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
