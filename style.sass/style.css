@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   font-family: "Jura", sans-serif;
+  text-decoration: none;
 }
 
 html {
   font-size: 62.5%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mouse-circle, .mouse-dot {
@@ -12,10 +19,11 @@ html {
   z-index: 100;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .mouse-circle {
-  border: 0.6rem solid rgba(255, 29, 142, 0.678);
+  border: 0.3rem solid rgba(255, 29, 142, 0.678);
   border-radius: 50%;
   -webkit-animation: mouseCircleAnime 5s infinite;
           animation: mouseCircleAnime 5s infinite;
@@ -65,4 +73,26 @@ html {
     width: 3rem;
     height: 3rem;
   }
+}
+.section-1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.section-1 .logo {
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  font-size: 1.5rem;
+  color: WHITE;
+}
+.section-1 .main-circle {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.section-1 .main-circle img {
+  mix-blend-mode: color-dodge;
 }/*# sourceMappingURL=style.css.map */
