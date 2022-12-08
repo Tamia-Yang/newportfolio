@@ -72,8 +72,8 @@ html {
 }
 .container .logo {
   position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 1.2rem;
+  left: 1.3rem;
   font-size: 1.5rem;
   color: white;
   background-color: rgb(39, 39, 39);
@@ -89,6 +89,7 @@ html {
   top: 50%;
 }
 .container .page {
+  background-size: cover;
   position: relative;
   width: 900px;
   height: 100%;
@@ -115,26 +116,40 @@ html {
   bottom: -2.8rem;
   right: 0;
 }
+.container .page .featured-text-2 {
+  right: 1.3rem;
+  top: 2.3rem;
+}
 .container .page .featured-text-3 {
   transform: rotate(90deg);
-  top: 8rem;
-  right: -1rem;
+  top: 8.7rem;
+  right: -1.2rem;
 }
 .container .page .featured-text-4 {
-  top: 92%;
+  top: 95%;
   left: 2.5%;
   z-index: 1;
   font-size: 9rem;
   text-align: justify;
 }
 .container .page .featured-text-5 {
-  top: 86%;
+  top: 89%;
   left: 3%;
   z-index: 1;
   font-size: 2.5rem;
   font-weight: normal;
   letter-spacing: 0.7rem;
   word-spacing: 1rem;
+}
+.container .page .box-line {
+  position: absolute;
+  width: 11rem;
+  height: 13rem;
+  bottom: 0px;
+  left: 9rem;
+  background-color: rgb(219, 179, 45);
+  z-index: 2;
+  mix-blend-mode: multiply;
 }
 .container .page img {
   width: 100%;
@@ -144,17 +159,18 @@ html {
 }
 .container .page .greywoman {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
 }
 .container .page .evieflower {
   position: absolute;
   width: 290px;
   height: 100%;
-  top: -8rem;
-  left: 16rem;
+  top: -6rem;
+  left: 14rem;
   z-index: 1;
   transform: rotate(-50deg);
   filter: grayscale(0.4);
+  z-index: 3;
 }
 .container .page .greyflower {
   position: absolute;
@@ -168,14 +184,25 @@ html {
 }
 .container .page .dot {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 17rem;
+  right: 22rem;
+  z-index: 1;
+  filter: grayscale(0.4);
+}
+.container .page .pattern1 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 17rem;
   right: 18rem;
   z-index: 1;
-  filter: grayscale(0.4);
+  filter: grayscale(0.5);
 }
 .container .circles {
   position: absolute;
@@ -207,7 +234,7 @@ html {
 }
 .container .circles .circle-4 {
   background: mediumaquamarine;
-  width: 300px;
+  width: 350px;
   height: 60px;
   border-radius: 0;
 }/*# sourceMappingURL=style.css.map */
