@@ -23,7 +23,7 @@ html {
 }
 
 .mouse-circle {
-  border: 0.3rem solid rgba(255, 29, 142, 0.678);
+  border: 0.3rem solid rgb(228, 18, 18);
   border-radius: 50%;
   -webkit-animation: mouseCircleAnime 5s infinite;
           animation: mouseCircleAnime 5s infinite;
@@ -33,16 +33,6 @@ html {
   width: 0.5rem;
   height: 0.5rem;
   background-color: rgba(255, 255, 255, 0.678);
-}
-
-.page-bg {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: rgb(28, 34, 66);
-  background: linear-gradient(84deg, rgba(28, 34, 66, 0.8603816527) 0%, rgba(201, 238, 230, 0.6) 100%), url(/images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @-webkit-keyframes mouseCircleAnime {
@@ -74,25 +64,83 @@ html {
     height: 3rem;
   }
 }
-.section-1 {
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(241, 241, 241);
+}
+.container .logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.6rem;
+  color: black;
+}
+.container .page {
+  width: 800px;
+  height: 90%;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+}
+.container .page img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .page h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  bottom: -2.5rem;
+  right: 0;
+}
+.container .section-1 {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.section-1 .logo {
+.container .section-1 .circles {
   position: absolute;
-  top: 2rem;
-  left: 5rem;
-  font-size: 1.5rem;
-  color: WHITE;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
-.section-1 .main-circle {
-  width: 40rem;
-  height: 40rem;
-  position: absolute;
-  overflow: hidden;
+.container .section-1 .circles .circle-1 {
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
+  background-color: rgb(240, 27, 27);
+  align-items: center;
+  justify-content: center;
 }
-.section-1 .main-circle img {
-  mix-blend-mode: color-dodge;
+.container .section-1 .circles .circle-2 {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-color: rgb(166, 87, 219);
+  align-items: center;
+  justify-content: center;
+}
+.container .section-1 .circles .circle-3 {
+  background: mediumaquamarine;
+  width: 7px;
+  height: 70px;
+  border-radius: 0;
+  mix-blend-mode: multiply;
+  opacity: 60%;
+}
+.container .section-1 .circles .circle-4 {
+  background: mediumaquamarine;
+  width: 400px;
+  height: 70px;
+  border-radius: 0;
+  mix-blend-mode: multiply;
+  opacity: 60%;
 }/*# sourceMappingURL=style.css.map */
