@@ -65,8 +65,9 @@ animation: mouseCircleAnime 5s infinite ;
         // position: absolute;
         top: 1.5rem;
         left: 1.5rem;
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: black;
+       
    
     }
     .page{
@@ -112,6 +113,15 @@ animation: mouseCircleAnime 5s infinite ;
           top: 8rem;
           right: -1rem;
         }
+        .featured-text-4{
+      
+            top: 92%;
+            left: 2.5%;
+      
+            z-index: 1;
+            font-size: 9rem;
+
+        }
 
         img {
             width: 100%;
@@ -124,12 +134,11 @@ animation: mouseCircleAnime 5s infinite ;
         }
         .evieflower {
             position: absolute;
-            width: 300px;
+            width: 290px;
             height: 100%;
-            top:-7rem;
-            left:17rem;
+            top:-8rem;
+            left:16rem;
             z-index: 1;
-           
             transform: rotate(-50deg);
             filter: grayscale(0.4);
          
@@ -144,6 +153,7 @@ animation: mouseCircleAnime 5s infinite ;
             right: 10rem;
             z-index: 4;
         }
+     
     }
         .circles{
             position: absolute;
