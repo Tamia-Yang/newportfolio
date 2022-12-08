@@ -57,6 +57,9 @@ animation: mouseCircleAnime 5s infinite ;
     width: 100%;
     height:100vh;
     background-color:rgb(241, 241, 241);
+
+    
+// start of section-1
     .logo {
         position: fixed;
         // position: absolute;
@@ -64,22 +67,20 @@ animation: mouseCircleAnime 5s infinite ;
         left: 1.5rem;
         font-size: 2rem;
         color: black;
-  
-       
+   
     }
     .page{
       
+        position: relative;
         width: 900px;
         height: 100%;
         background-color: white;
         margin: 0 auto;
-        position: relative;
         color: black;
         z-index: 5;
         transform: scale(0.8);
         filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.2));
-        
-   
+    
         .featured-text {
             position: absolute;
             top: 2rem;
@@ -93,28 +94,23 @@ animation: mouseCircleAnime 5s infinite ;
         h2 {
             position:absolute;
             font-size: 2.8rem;
-            font-weight: 600;
+            font-weight: 500;
             color: #000000;
             bottom: -2.8rem;
             right: 0;
         }
-        h3 {
-           font-size: 1rem;
-            top: 5rem;
-            left: 0rem;
-            color: black;
-         
-        }
+      
         .featured-text-1 {
             top: 4rem;
             left: 1.5rem;
+            font-size: 0.1rem;
+          
+            color: black;
         }
         .featured-text-3{
           transform: rotate(90deg);
           top: 8rem;
           right: -1rem;
-
-       
         }
 
         img {
@@ -122,30 +118,33 @@ animation: mouseCircleAnime 5s infinite ;
             height: 100%;
             object-fit:contain;
         }
+        .greywoman{
+            position: absolute;
+            z-index: 2;
+        }
+        .evieflower {
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            top:-7rem;
+            left:17rem;
+            z-index: 1;
+           
+            transform: rotate(-50deg);
+            filter: grayscale(0.4);
+         
+           
+        }
         .greyflower {
             width: 120px;
             height: 300px;
             object-fit:cover;
             position: absolute;
-               top:8rem;
+            top:8rem;
             right: 10rem;
-         
             z-index: 4;
         }
     }
-    
-}
-
-// start of section-1
-
-
-   
-
-.section-1{
-    position:relative;
-    width: 100%;
-    height: 100vh;
-    
         .circles{
             position: absolute;
             display: grid;
@@ -155,6 +154,7 @@ animation: mouseCircleAnime 5s infinite ;
             height: 100%;
             grid-template-columns:repeat(2,1fr) ;
             grid-template-rows:repeat(2,1fr) ;
+            z-index: 10;
             
             .circle {
                 mix-blend-mode: multiply;
@@ -166,15 +166,14 @@ animation: mouseCircleAnime 5s infinite ;
                 height:13rem;
                 border-radius: 50%;
                 background-color: rgb(240, 27, 27);
+             
            
-              
-       
             }
             .circle-2{
                 width: 13rem;
                 height:13rem;
                 border-radius: 50%;
-                background-color: rgb(166, 87, 219);
+                background-color: rgb(240, 27, 27);
                 mix-blend-mode: multiply;
               
               
@@ -197,5 +196,5 @@ animation: mouseCircleAnime 5s infinite ;
                
             }
         }
-    }
+    } 
 // end of section-1

@@ -78,11 +78,11 @@ html {
   color: black;
 }
 .container .page {
+  position: relative;
   width: 900px;
   height: 100%;
   background-color: white;
   margin: 0 auto;
-  position: relative;
   color: black;
   z-index: 5;
   transform: scale(0.8);
@@ -99,20 +99,16 @@ html {
 .container .page h2 {
   position: absolute;
   font-size: 2.8rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   bottom: -2.8rem;
   right: 0;
 }
-.container .page h3 {
-  font-size: 1rem;
-  top: 5rem;
-  left: 0rem;
-  color: black;
-}
 .container .page .featured-text-1 {
   top: 4rem;
   left: 1.5rem;
+  font-size: 0.1rem;
+  color: black;
 }
 .container .page .featured-text-3 {
   transform: rotate(90deg);
@@ -125,6 +121,20 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.container .page .greywoman {
+  position: absolute;
+  z-index: 2;
+}
+.container .page .evieflower {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  top: -7rem;
+  left: 17rem;
+  z-index: 1;
+  transform: rotate(-50deg);
+  filter: grayscale(0.4);
+}
 .container .page .greyflower {
   width: 120px;
   height: 300px;
@@ -135,13 +145,7 @@ html {
   right: 10rem;
   z-index: 4;
 }
-
-.section-1 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-.section-1 .circles {
+.container .circles {
   position: absolute;
   display: grid;
   top: 0;
@@ -150,32 +154,33 @@ html {
   height: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  z-index: 10;
 }
-.section-1 .circles .circle {
+.container .circles .circle {
   mix-blend-mode: multiply;
   opacity: 60%;
 }
-.section-1 .circles .circle-1 {
+.container .circles .circle-1 {
   width: 13rem;
   height: 13rem;
   border-radius: 50%;
   background-color: rgb(240, 27, 27);
 }
-.section-1 .circles .circle-2 {
+.container .circles .circle-2 {
   width: 13rem;
   height: 13rem;
   border-radius: 50%;
-  background-color: rgb(166, 87, 219);
+  background-color: rgb(240, 27, 27);
   mix-blend-mode: multiply;
 }
-.section-1 .circles .circle-3 {
+.container .circles .circle-3 {
   background: mediumaquamarine;
   width: 7px;
   height: 70px;
   border-radius: 0;
   opacity: 60%;
 }
-.section-1 .circles .circle-4 {
+.container .circles .circle-4 {
   background: mediumaquamarine;
   width: 300px;
   height: 60px;
