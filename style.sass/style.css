@@ -2,6 +2,7 @@
 * {
   font-family: "Jura", sans-serif;
   text-decoration: none;
+  color: white;
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 }
 
 .mouse-circle {
-  border: 0.3rem solid rgb(228, 18, 18);
+  border: 0.1rem solid rgb(228, 18, 18);
   border-radius: 50%;
   -webkit-animation: mouseCircleAnime 5s infinite;
           animation: mouseCircleAnime 5s infinite;
@@ -70,18 +71,53 @@ html {
   background-color: rgb(241, 241, 241);
 }
 .container .logo {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   left: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: black;
 }
 .container .page {
-  width: 800px;
-  height: 90%;
+  width: 900px;
+  height: 100%;
   background-color: white;
   margin: 0 auto;
   position: relative;
+  color: black;
+  z-index: 5;
+  transform: scale(0.8);
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.2));
+}
+.container .page .featured-text {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: black;
+}
+.container .page h2 {
+  position: absolute;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #000000;
+  bottom: -2.8rem;
+  right: 0;
+}
+.container .page h3 {
+  font-size: 1rem;
+  top: 5rem;
+  left: 0rem;
+  color: black;
+}
+.container .page .featured-text-1 {
+  top: 4rem;
+  left: 1.5rem;
+}
+.container .page .featured-text-3 {
+  transform: rotate(90deg);
+  top: 8rem;
+  right: -1rem;
 }
 .container .page img {
   width: 100%;
@@ -89,58 +125,59 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.container .page h2 {
-  font-size: 2.6rem;
-  font-weight: 600;
-  color: black;
+.container .page .greyflower {
+  width: 120px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
-  bottom: -2.5rem;
-  right: 0;
+  top: 8rem;
+  right: 10rem;
+  z-index: 4;
 }
-.container .section-1 {
+
+.section-1 {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.container .section-1 .circles {
+.section-1 .circles {
   position: absolute;
+  display: grid;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-.container .section-1 .circles .circle-1 {
+.section-1 .circles .circle {
+  mix-blend-mode: multiply;
+  opacity: 60%;
+}
+.section-1 .circles .circle-1 {
   width: 13rem;
   height: 13rem;
   border-radius: 50%;
   background-color: rgb(240, 27, 27);
-  align-items: center;
-  justify-content: center;
 }
-.container .section-1 .circles .circle-2 {
-  width: 22rem;
-  height: 22rem;
+.section-1 .circles .circle-2 {
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
   background-color: rgb(166, 87, 219);
-  align-items: center;
-  justify-content: center;
+  mix-blend-mode: multiply;
 }
-.container .section-1 .circles .circle-3 {
+.section-1 .circles .circle-3 {
   background: mediumaquamarine;
   width: 7px;
   height: 70px;
   border-radius: 0;
-  mix-blend-mode: multiply;
   opacity: 60%;
 }
-.container .section-1 .circles .circle-4 {
+.section-1 .circles .circle-4 {
   background: mediumaquamarine;
-  width: 400px;
-  height: 70px;
+  width: 300px;
+  height: 60px;
   border-radius: 0;
-  mix-blend-mode: multiply;
-  opacity: 60%;
 }/*# sourceMappingURL=style.css.map */
