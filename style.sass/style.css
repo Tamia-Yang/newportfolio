@@ -74,8 +74,19 @@ html {
   position: fixed;
   top: 1.5rem;
   left: 1.5rem;
-  font-size: 1.6rem;
-  color: black;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  padding: 1rem;
+}
+.container .logo::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #242424;
+  width: 30%;
+  margin-left: 15px;
+  top: 50%;
 }
 .container .page {
   position: relative;
@@ -104,12 +115,6 @@ html {
   bottom: -2.8rem;
   right: 0;
 }
-.container .page .featured-text-1 {
-  top: 4rem;
-  left: 1.5rem;
-  font-size: 0.1rem;
-  color: black;
-}
 .container .page .featured-text-3 {
   transform: rotate(90deg);
   top: 8rem;
@@ -120,6 +125,16 @@ html {
   left: 2.5%;
   z-index: 1;
   font-size: 9rem;
+  text-align: justify;
+}
+.container .page .featured-text-5 {
+  top: 86%;
+  left: 3%;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: 0.7rem;
+  word-spacing: 1rem;
 }
 .container .page img {
   width: 100%;
@@ -142,14 +157,25 @@ html {
   filter: grayscale(0.4);
 }
 .container .page .greyflower {
+  position: absolute;
   width: 120px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
   top: 8rem;
   right: 10rem;
   z-index: 4;
+}
+.container .page .dot {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 17rem;
+  right: 18rem;
+  z-index: 1;
+  filter: grayscale(0.4);
 }
 .container .circles {
   position: absolute;
@@ -178,13 +204,6 @@ html {
   border-radius: 50%;
   background-color: rgb(240, 27, 27);
   mix-blend-mode: multiply;
-}
-.container .circles .circle-3 {
-  background: mediumaquamarine;
-  width: 7px;
-  height: 70px;
-  border-radius: 0;
-  opacity: 60%;
 }
 .container .circles .circle-4 {
   background: mediumaquamarine;

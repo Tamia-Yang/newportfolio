@@ -65,9 +65,22 @@ animation: mouseCircleAnime 5s infinite ;
         // position: absolute;
         top: 1.5rem;
         left: 1.5rem;
-        font-size: 1.6rem;
-        color: black;
-       
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgb(39, 39, 39);
+        padding:1rem;
+        
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 1px;
+            background-color: #242424;
+            width: 30%;
+            margin-left: 15px;
+            top: 50%;
+        }
+
    
     }
     .page{
@@ -101,28 +114,33 @@ animation: mouseCircleAnime 5s infinite ;
             right: 0;
         }
       
-        .featured-text-1 {
-            top: 4rem;
-            left: 1.5rem;
-            font-size: 0.1rem;
-          
-            color: black;
-        }
+      
         .featured-text-3{
           transform: rotate(90deg);
           top: 8rem;
           right: -1rem;
         }
         .featured-text-4{
-      
             top: 92%;
             left: 2.5%;
-      
             z-index: 1;
             font-size: 9rem;
+            text-align: justify;
 
         }
+        .featured-text-5{
+            top: 86%;
+            left: 3%;
+            z-index: 1;
+            font-size: 2.5rem;
+            font-weight: normal;
+            letter-spacing: 0.7rem;
+            word-spacing: 1rem;
+            
+           
+       
 
+        }
         img {
             width: 100%;
             height: 100%;
@@ -145,13 +163,24 @@ animation: mouseCircleAnime 5s infinite ;
            
         }
         .greyflower {
+            position: absolute;
             width: 120px;
             height: 300px;
             object-fit:cover;
-            position: absolute;
             top:8rem;
             right: 10rem;
             z-index: 4;
+        }
+        .dot {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            object-fit:cover;
+       
+           bottom:17rem;
+            right: 18rem;
+            z-index: 1;
+            filter: grayscale(0.4) ;
         }
      
     }
@@ -188,14 +217,7 @@ animation: mouseCircleAnime 5s infinite ;
               
               
             }
-            .circle-3{
-                background: mediumaquamarine;
-                width: 7px;
-                height: 70px;
-                border-radius: 0;
-                opacity: 60%;
-             
-            }
+ 
             .circle-4{
             
                 background: mediumaquamarine;
