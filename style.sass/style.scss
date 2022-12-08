@@ -151,13 +151,20 @@ animation: mouseCircleAnime 5s infinite ;
             bottom:0px;
             left:9rem;
             background-color: rgb(219, 179, 45);
-            z-index: 2;
+            z-index: 4;
             mix-blend-mode:multiply;
-            
-          
-            
+
         
-     
+        }
+        .window-line{
+            position: absolute;
+            width:51rem;
+            height: 50rem;
+            top:10rem;
+            left:9rem;
+            border: 1px solid black;
+            z-index: 2;
+            
         }
         img {
             width: 100%;
@@ -168,7 +175,6 @@ animation: mouseCircleAnime 5s infinite ;
             position: absolute;
             z-index: 5;
 
-       
         }
         .evieflower {
             position: absolute;

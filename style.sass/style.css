@@ -148,8 +148,17 @@ html {
   bottom: 0px;
   left: 9rem;
   background-color: rgb(219, 179, 45);
-  z-index: 2;
+  z-index: 4;
   mix-blend-mode: multiply;
+}
+.container .page .window-line {
+  position: absolute;
+  width: 51rem;
+  height: 50rem;
+  top: 10rem;
+  left: 9rem;
+  border: 1px solid black;
+  z-index: 2;
 }
 .container .page img {
   width: 100%;
