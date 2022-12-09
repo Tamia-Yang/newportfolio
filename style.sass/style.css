@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 * {
   font-family: "Jura", sans-serif;
   text-decoration: none;
@@ -136,10 +137,30 @@ html {
   top: 89%;
   left: 3%;
   z-index: 1;
-  font-size: 2.5rem;
-  font-weight: normal;
-  letter-spacing: 0.7rem;
-  word-spacing: 1rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 2.5rem;
+  word-spacing: 2rem;
+}
+.container .page .featured-text-6 {
+  width: 26rem;
+  height: 13rem;
+  background-color: #fff;
+  top: 12rem;
+  left: 8%;
+  font-size: 6.5rem;
+  font-weight: 800;
+  z-index: 3;
+  text-align: left;
+  line-height: 5.5rem;
+  font-family: "Abril Fatface", cursive;
+}
+.container .page .featured-text-7 {
+  top: 25rem;
+  left: 0rem;
+  font-size: 1.5rem;
+  color: black;
+  transform: rotate(-90deg);
 }
 .container .page .box-line {
   position: absolute;
@@ -154,10 +175,10 @@ html {
 .container .page .window-line {
   position: absolute;
   width: 51rem;
-  height: 50rem;
-  top: 10rem;
-  left: 9rem;
-  border: 1px solid black;
+  height: 70rem;
+  top: 15rem;
+  left: 11rem;
+  border: 4px solid black;
   z-index: 2;
 }
 .container .page img {
@@ -179,7 +200,8 @@ html {
   z-index: 1;
   transform: rotate(-50deg);
   filter: grayscale(0.4);
-  z-index: 3;
+  z-index: 6;
+  mix-blend-mode: darken;
 }
 .container .page .greyflower {
   position: absolute;
@@ -193,12 +215,12 @@ html {
 }
 .container .page .dot {
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
-  bottom: 17rem;
-  right: 22rem;
+  bottom: 15rem;
+  right: 20rem;
   z-index: 1;
   filter: grayscale(0.4);
 }
