@@ -132,6 +132,7 @@ html {
   z-index: 1;
   font-size: 9rem;
   text-align: justify;
+  z-index: 6;
 }
 .container .page .featured-text-5 {
   top: 89%;
@@ -143,31 +144,48 @@ html {
   word-spacing: 2rem;
 }
 .container .page .featured-text-6 {
-  width: 26rem;
-  height: 13rem;
+  width: 27.5rem;
+  height: 19rem;
   background-color: #fff;
   top: 12rem;
   left: 8%;
   font-size: 6.5rem;
   font-weight: 800;
   z-index: 3;
+  letter-spacing: 0.8rem;
   text-align: left;
-  line-height: 5.5rem;
+  line-height: 6.5rem;
   font-family: "Abril Fatface", cursive;
 }
 .container .page .featured-text-7 {
-  top: 25rem;
-  left: 0rem;
-  font-size: 1.5rem;
   color: black;
-  transform: rotate(-90deg);
+  height: 10rem;
+  left: 8rem;
+  top: 27rem;
+  letter-spacing: 4.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Abril Fatface", cursive;
+  z-index: 4;
+}
+.container .page .featured-text-8 {
+  color: black;
+  height: 10rem;
+  left: 8rem;
+  top: 27rem;
+  letter-spacing: 4.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Abril Fatface", cursive;
+  z-index: 4;
+  transform: rotate(90deg);
 }
 .container .page .box-line {
   position: absolute;
   width: 11rem;
   height: 13rem;
   bottom: 0px;
-  left: 9rem;
+  left: 8.5rem;
   background-color: rgb(219, 179, 45);
   z-index: 4;
   mix-blend-mode: multiply;
@@ -190,18 +208,6 @@ html {
 .container .page .greywoman {
   position: absolute;
   z-index: 5;
-}
-.container .page .evieflower {
-  position: absolute;
-  width: 290px;
-  height: 100%;
-  top: -6rem;
-  left: 14rem;
-  z-index: 1;
-  transform: rotate(-50deg);
-  filter: grayscale(0.4);
-  z-index: 6;
-  mix-blend-mode: darken;
 }
 .container .page .greyflower {
   position: absolute;
