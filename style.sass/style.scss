@@ -117,6 +117,12 @@ animation: mouseCircleAnime 5s infinite ;
             bottom: -2.8rem;
             right: 0;
         }
+
+        .featured-text{
+            color: black;
+            font-family: 'Abril Fatface', cursive;
+            z-index: 4;
+        }
       
         .featured-text-2{
             right: 1.3rem;
@@ -159,32 +165,31 @@ animation: mouseCircleAnime 5s infinite ;
             letter-spacing: 0.8rem;
             text-align: left;
             line-height:6.5rem;
-            font-family: 'Abril Fatface', cursive;
+            
    
         }
         .featured-text-7 {
-            color: black;
             height: 10rem;
             left:8rem;
             top:27rem;
-            letter-spacing: 4.5rem;
-            font-size: 2.5rem;
+            letter-spacing: 4.3rem;
+            font-size:3rem;
             font-weight: 400;
-            font-family: 'Abril Fatface', cursive;
-            z-index: 4;
+         
         }
         .featured-text-8 {
-            color: black;
-            height: 10rem;
-            left:8rem;
-            top:27rem;
-            letter-spacing: 4.5rem;
-            font-size: 2.5rem;
-            font-weight: 400;
-            font-family: 'Abril Fatface', cursive;
-            z-index: 4;
-            transform:rotate(90deg);
+            font-size: 1.8rem;
+            width:0;
+            word-wrap: break-word;
+            left:8.25rem;
+            top:30rem;
+            line-height: 2rem;
+            color:rgb(255, 172, 186);
+            background-color: black;
+           
+
         }
+  
      
         .box-line{
             position: absolute;
@@ -229,7 +234,7 @@ animation: mouseCircleAnime 5s infinite ;
             right: 10rem;
             z-index: 4;
         }
-        .dot {
+        .dot1, .dont2{
             position: absolute;
             width: 200px;
             height: 160px;
@@ -238,6 +243,12 @@ animation: mouseCircleAnime 5s infinite ;
             right: 20rem;
             z-index: 1;
             filter: grayscale(0.4);
+        }
+
+        .dot2 {
+            top:0;
+            width: 200px;
+            height: 160px;
         }
         .pattern1 {
             position: absolute;
