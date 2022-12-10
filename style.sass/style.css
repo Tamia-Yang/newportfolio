@@ -253,7 +253,9 @@ html {
   mix-blend-mode: multiply;
   opacity: 60%;
   position: relative;
-  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 2s;
 }
 .container .circles .circle-1 {
   width: 13rem;

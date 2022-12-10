@@ -8,13 +8,33 @@ let prevX = 0, prevY = 0; // previeous Coordinates
 window.addEventListener("mousemove",(e,x,y)=>{
    if(prevX < e.clientX){
     circles.forEach(circle =>{
-        circle.style.left =`150px`;
+        circle.style.right =`40px`;
     })
 
+   }else if(prevX > e.clientX){
+    circles.forEach(circle =>{
+        circle.style.right =`-40px`;
+    })
    }
-   prevX = e.clientX;
-   prevY = e.clientY;
+
+
+   if(prevY < e.clientY){
+    circles.forEach(circle =>{
+        circle.style.bottom =`40px`;
+    })
+
+   }else if(prevY > e.clientY){
+    circles.forEach(circle =>{
+        circle.style.bottom =`-40px`;
+    })
+  
+}
+prevX = e.clientX;
+prevY = e.clientY;
+
+
 })
+
 
 
 // mouse circle
