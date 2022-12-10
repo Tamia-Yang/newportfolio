@@ -156,10 +156,11 @@ html {
   left: 8%;
   font-size: 6.5rem;
   font-weight: 800;
-  z-index: 3;
+  z-index: 4;
   letter-spacing: 0.8rem;
   text-align: left;
   line-height: 6.5rem;
+  mix-blend-mode: darken;
 }
 .container .page .featured-text-7 {
   height: 10rem;
@@ -204,12 +205,16 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.container .page .position {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .container .page .greywoman {
   position: absolute;
-  z-index: 5;
+  z-index: 15;
 }
 .container .page .greyflower {
-  position: absolute;
   width: 120px;
   height: 300px;
   -o-object-fit: cover;
@@ -218,32 +223,20 @@ html {
   right: 10rem;
   z-index: 4;
 }
-.container .page .dot1, .container .page .dont2 {
-  position: absolute;
+.container .page .dot1 {
   width: 200px;
   height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
   bottom: 15rem;
   right: 20rem;
   z-index: 1;
   filter: grayscale(0.4);
 }
 .container .page .dot2 {
-  top: 0;
-  width: 200px;
-  height: 160px;
-}
-.container .page .pattern1 {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  bottom: 17rem;
-  right: 18rem;
-  z-index: 1;
-  filter: grayscale(0.5);
+  width: 180px;
+  height: 180px;
+  top: 6rem;
+  lefT: 2rem;
+  z-index: 3;
 }
 .container .circles {
   position: absolute;
@@ -259,6 +252,8 @@ html {
 .container .circles .circle {
   mix-blend-mode: multiply;
   opacity: 60%;
+  position: relative;
+  left: 0;
 }
 .container .circles .circle-1 {
   width: 13rem;

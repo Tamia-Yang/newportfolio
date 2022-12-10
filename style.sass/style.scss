@@ -161,10 +161,11 @@ animation: mouseCircleAnime 5s infinite ;
             left: 8%;
             font-size:6.5rem;
             font-weight: 800;
-            z-index: 3;
+            z-index: 4;
             letter-spacing: 0.8rem;
             text-align: left;
             line-height:6.5rem;
+            mix-blend-mode: darken;
             
    
         }
@@ -219,14 +220,17 @@ animation: mouseCircleAnime 5s infinite ;
             height: 100%;
             object-fit:contain;
         }
+        .position {
+            position: absolute;
+            object-fit:cover;
+        }
         .greywoman{
             position: absolute;
-            z-index: 5;
+            z-index: 15;
 
         }
 
         .greyflower {
-            position: absolute;
             width: 120px;
             height: 300px;
             object-fit:cover;
@@ -234,34 +238,24 @@ animation: mouseCircleAnime 5s infinite ;
             right: 10rem;
             z-index: 4;
         }
-        .dot1, .dont2{
-            position: absolute;
+        .dot1{
             width: 200px;
             height: 160px;
-            object-fit:cover;
             bottom:15rem;
             right: 20rem;
             z-index: 1;
             filter: grayscale(0.4);
         }
 
-        .dot2 {
-            top:0;
-            width: 200px;
-            height: 160px;
+        .dot2 { 
+            width: 180px;
+            height: 180px;
+            top:6rem;
+            lefT:2rem;
+            z-index: 3;
+      
         }
-        .pattern1 {
-            position: absolute;
-            width: 140px;
-            height: 140px;
-            object-fit:cover;
-           bottom:17rem;
-            right: 18rem;
-            z-index: 1;
-            filter: grayscale(0.5);
-            
-        }
-     
+ 
      
     }
         .circles{
@@ -278,6 +272,8 @@ animation: mouseCircleAnime 5s infinite ;
             .circle {
                 mix-blend-mode: multiply;
                 opacity: 60%;
+                position: relative;
+                left: 0;
             }
            
             .circle-1{
