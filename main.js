@@ -1,13 +1,12 @@
 const mouseCircle = document.querySelector(".mouse-circle");
 const mouseDot = document.querySelector(".mouse-dot");
 const circles = document.querySelectorAll(".circle");
-
-
+const z = '2rem';
 let prevX = 0, prevY = 0; // previeous Coordinates
 window.addEventListener("mousemove",(e,x,y)=>{
    if(prevX < e.clientX){
     circles.forEach(circle =>{
-        circle.style.right =`2rem`;
+        circle.style.right =z;
         circle.style.position=""
     })
 
@@ -20,7 +19,7 @@ window.addEventListener("mousemove",(e,x,y)=>{
 
    if(prevY < e.clientY){
     circles.forEach(circle =>{
-        circle.style.bottom =`2rem`;
+        circle.style.bottom =z;
     })
 
    }else if(prevY > e.clientY){
